@@ -175,9 +175,9 @@ Try DeepISLES out with the provided example data:
 ## Citations
 If you use this repository, please cite the following publications:
 
-1. **de la Rosa, E., Reyes, M., Liew, S. L., Hutton, A., Wiest, R., Kaesmacher, J., ... & Wiestler, B. (2024).**  
-   *A Robust Ensemble Algorithm for Ischemic Stroke Lesion Segmentation: Generalizability and Clinical Utility Beyond the ISLES Challenge.*  
-   [arXiv:2403.19425](https://arxiv.org/abs/2403.19425)
+1. **de la Rosa, E., Reyes, M., Liew, S. L., Hutton, A., Wiest, R., Kaesmacher, J., ... & Wiestler, B. (2025).**  
+   *DeepISLES: A clinically validated ischemic stroke segmentation model from the ISLES'22 challenge*  
+   [*Nature Communications*](https://www.nature.com/articles/s41467-025-62373-x)
 
 2. **Hernandez Petzsche, M. R., de la Rosa, E., Hanning, U., Wiest, R., Valenzuela, W., Reyes, M., ... & Kirschke, J. S. (2022).**  
    *ISLES 2022: A multi-center magnetic resonance imaging stroke lesion segmentation dataset.*  
