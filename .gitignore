@@ -165,3 +165,7 @@ cython_debug/
 .vscode
 
 .DS_Store
+
+
+*.7z
+src/weights/
