@@ -166,6 +166,12 @@ cython_debug/
 
 .DS_Store
 
+example_test/
+research/
+toy/
+weights/
+
+
 
 *.7z
 src/weights/

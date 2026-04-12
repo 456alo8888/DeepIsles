@@ -60,6 +60,8 @@ def print_run(algorithm):
 
 def get_img_shape(image_path):
     myimg = nib.load(image_path)
+    if len(myimg.shape) == 4:
+        myimg = myimg.get_fdata()[:, :, :, 0]  # Take the first volume if it's 4D
     return len(myimg.shape)
 
 def save_nii(mydata, myaffine, myheader, outpath):
@@ -222,6 +224,8 @@ def registration_qc(image_paths, labels, output_path, lesion_msk_path, brain_mas
     # Load brain mask if provided
     if brain_mask_path is not None:
         brain = nib.load(brain_mask_path).get_fdata()
+        if len(brain.shape) == 4:
+            brain = brain[: , : , : ,0] # Take the first volume if it's 4D
     else:
         brain = 1.0 * (images[0] > 0.1)  # Use the second image as mask reference
 
@@ -230,6 +234,8 @@ def registration_qc(image_paths, labels, output_path, lesion_msk_path, brain_mas
 
     # Load lesion mask
     lesion_msk = nib.load(lesion_msk_path).get_fdata()
+    if len(lesion_msk.shape) == 4:
+        lesion_msk = lesion_msk[:, : , : ,0] # Take the first volume if it's 4D
 
     # Determine the slice with the largest number of positive pixels for each view
     lesion_sums_axial = np.sum(lesion_msk > 0, axis=(0, 1))

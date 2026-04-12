@@ -3,7 +3,8 @@
 
 import os
 import sys
-PATH_DEEPSISLES = os.getcwd()  # path-to-ensemble-repo
+# PATH_DEEPSISLES = os.getcwd()  # path-to-ensemble-repo
+PATH_DEEPSISLES = "/mnt/disk1/hieupc/4gpus-Stroke-outcome-prediction-code/code/baseline_encoder/DeepIsles"
 sys.path.append(PATH_DEEPSISLES)
 from src.isles22_ensemble import IslesEnsemble
 
